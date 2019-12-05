@@ -12,7 +12,8 @@ Quite a primitive parser, extracts items loaded on initial http request to https
 * Java 12
 * Maven 4.0.0
 * Jsoup 1.11.3
-* log4j 1.2.17
+* Gson 2.8.5
+* Log4j 1.2.17
 
 # <a name="launch"></a>How to run the project?
 ~$ java -jar InternetShopHtmlParser.jar 

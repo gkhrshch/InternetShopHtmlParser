@@ -16,9 +16,9 @@ Quite a primitive parser, extracts items loaded on initial http request to https
 * Log4j 1.2.17
 
 # <a name="launch"></a>How to run the project?
-Download JAR file:
+1. Download JAR file:
 https://github.com/gkhrshch/InternetShopHtmlParser/blob/master/InternetShopHtmlParser.jar
-Open cmd/bash/other console app
-~$ cd {$path to InternetShopHtmlParser.jar file} 
-~$ java -jar InternetShopHtmlParser.jar 
-enjoy your parsed items in newly-created Products.json file in the same directory where the InternetShopHtmlParser.jar file is 
+2. Open cmd/bash/other console app
+3. ~$ cd {$path to InternetShopHtmlParser.jar file} 
+4. ~$ java -jar InternetShopHtmlParser.jar 
+5. Enjoy your parsed items in newly-created Products.json file in the same directory where the InternetShopHtmlParser.jar file is 

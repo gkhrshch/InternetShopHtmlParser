@@ -26,8 +26,8 @@ public class WebsiteParser {
 
         final Document mainPage = Jsoup.parse(new URL(URL), 10000);
         httpRequestCounter.increment();
-        Elements productElements = mainPage.getElementsByAttributeValue("data-test-id", "ProductTile");
 
+        Elements productElements = mainPage.getElementsByAttributeValue("data-test-id", "ProductTile");
         productElements.forEach(productElement -> {
             String productUrl = URL_CORE + productElement.attr("href");
             Document productPage = null;
@@ -53,15 +53,16 @@ public class WebsiteParser {
                 products.add(product);
             }
         });
+
         logger.debug("Amount of triggered http requests: " + HttpRequestCounter.getCount());
         logger.debug("Amount of extracted products: " + products.size());
         Thread.sleep(5000);
         return products;
     }
 
-    List<String> getColors(Document itemPage) {
+    List<String> getColors(Document productPage) {
         Elements colorsElements =
-                itemPage.getElementsByAttributeValue("data-test-id", "ColorVariantColorInfo");
+                productPage.getElementsByAttributeValue("data-test-id", "ColorVariantColorInfo");
         List<String> colors = new ArrayList<>();
         colorsElements.forEach(colorElement -> {
             String[] colorsToSplit = colorElement.text().split(" / ");

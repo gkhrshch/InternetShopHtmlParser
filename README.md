@@ -6,7 +6,7 @@
 * [How to run the project](#launch)
 
 # <a name="description"></a>Project description
-Quite a primitive parser, extracts items loaded on initial http request to https://www.aboutyou.de/maenner/bekleidung internet shop website
+Quite a primitive parser, extracts items loaded on initial http request to https://www.aboutyou.de/maenner/bekleidung internet shop website. Probably thread-safe.
 
 # <a name="technologies"></a>Technologies used
 * Java 12
